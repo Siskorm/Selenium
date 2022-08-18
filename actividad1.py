@@ -5,14 +5,14 @@ import time
 import pandas as pd
 #from objPlantilla import ObjElement
 #from objPlantilla import ObjPlantilla
-from Cselenium import ClassSelenium
+from Cselenium1 import CSelenium
 #from classpandas import Classpanda
 #from classmatplotlib import ClassMatplotlib
 
 path_file = r'Plantilla.json'
 #mt = ClassMatplotlib()
 #pa = Classpanda()
-sl = ClassSelenium()
+sl = CSelenium()
 
 plantilla = ObjPlantilla().GetObjects(path_file)
 print(plantilla[0])
@@ -47,3 +47,8 @@ for obj in plantilla:
     mt.set_graph(books,obj.readTable.chart)
     print("FIN.")
     pass
+
+
+class actividad1():
+    def __init__(self):
+        pass

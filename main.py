@@ -1,3 +1,6 @@
+import Actividad1 from Actividad1
+import Actividad2 from Actividad2
+
 class principal():
   def menu(self):
     print("==================================================")

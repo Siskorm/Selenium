@@ -7,7 +7,7 @@ from selenium.common.exceptions import NoSuchElementException
 
 PATH_DRIVER = r'C:/chromedriver.exe'
 
-class ClassSelenium:
+class CSelenium:
     driver = ""
     drive = ""
     data = {}
