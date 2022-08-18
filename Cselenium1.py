@@ -4,6 +4,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver import ActionChains
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.support.ui import Select
+
 
 PATH_DRIVER = r'C:/chromedriver.exe'
 
@@ -39,9 +41,6 @@ class CSelenium:
                     self.data[title2[d - 1].text].append(text)
         return self.data
         pass
-
-
-
 
 
     def FindByAndAction(self, type, selector, action, value):
@@ -105,11 +104,9 @@ class CSelenium:
         thead = FindBy(type_th,selector_th)
         tbody = FindBy(type_tb,selector_tb)
         for t in range(len(thead)):
-            # TODO() INSERTANDO LOS TITULOS DE CABECERA
             if len(thead[t].text) > 1:
                 self.data[thead[t].text] = []
         for col in range(1, len(tbody) + 1):
-            # TODO() LOS TITULOS ASIGNANDO ELEMENTO POR CAMPO EN SI 34 FILAS POR 10 CAMPOS
             for d in range(1, len(thead)):
                 text = self.driver.find_element(By.XPATH, selector_tb +"[" + str(col) + "]/td[" + str(d) + "]").text
                 if len(text) > 1:
@@ -120,8 +117,6 @@ class CSelenium:
         pass
     
 
-
-    
     def ElementAction(self, element, action, value):
         if action == 'click':
             self.Click(element)

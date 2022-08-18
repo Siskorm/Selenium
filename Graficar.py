@@ -8,6 +8,7 @@ class Graficar():
     self.width = width
     self.height = height
     self.color = color
-    
- 
+    pass
+
+  
 

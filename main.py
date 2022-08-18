@@ -11,3 +11,6 @@ class principal():
     print("0)Salir")
     pass
   
+
+run = principal()
+print(run)

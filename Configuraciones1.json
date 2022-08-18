@@ -1,0 +1,22 @@
+[
+  {
+    "navegator": "Chrome",
+    "URL": "",
+    "readTable": {
+       "read" : true,
+       "chart": {
+          "x": "",
+          "y": "",
+          "quantity": 2
+       }
+    },
+    "elements": [
+      {
+         "action": "click",
+         "value": null,
+         "type": "xpath",
+         "selector": ""
+      }
+    ]
+
+}]
